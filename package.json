@@ -8,7 +8,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix cvgenerator",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cvgenerator"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix cvgenerator && npm run build --prefix cvgenerator"
   },
   "author": "Abhishek kumar Gupta",
   "license": "MIT",

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu");
+
+html,
+body {
+  height: 100%;
+  background: #d3dbf2;
+}
+
+.webpage {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 3%;
+  width: 600px;
+  height: 420px;
+  background: linear-gradient(rgba(38, 38, 43, 0.85), rgba(38, 38, 43, 0.95)),
+    url("https://images.pexels.com/photos/70232/pexels-photo-70232.jpeg?h=350&auto=compress");
+  z-index: 1;
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+.right-triangle {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("https://images.pexels.com/photos/114907/pexels-photo-114907.jpeg?h=350&auto=compress");
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.red-brand-box {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  top: 10%;
+  left: 10%;
+  background: #ef4135;
+  z-index: 1;
+}
+
+.white-brand-box {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 15%;
+  left: 15%;
+  border: solid 6px #ffffff;
+  z-index: 2;
+}
+
+.presents-text {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: "Open Sans Condensed";
+  color: #a19e9f;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.title {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: "Ubuntu";
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  position: absolute;
+  width: 25%;
+  height: 10%;
+  bottom: 25%;
+  left: 10%;
+  background: #ef4135;
+  border-radius: 0%;
+  border: none;
+  padding: 10;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 600px) {
+  .webpage {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+  }
+
+  .white-brand-box {
+    border: solid 3px #ffffff;
+  }
+
+  .presents-text {
+    font-size: 8px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .cta-button {
+    font-size: 6px;
+  }
+
+  .branding-logo {
+    border: solid 3px #ffffff;
+  }
+}

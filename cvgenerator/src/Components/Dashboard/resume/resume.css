@@ -1,0 +1,9 @@
+.li:hover {
+  margin-left: 15px;
+  font-style: bold;
+  text-underline-position: below;
+  border-bottom: 2px solid;
+}
+.li {
+  font-size: large;
+}

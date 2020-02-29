@@ -8,6 +8,7 @@ import Resume from "./Components/Dashboard/resume/resume";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
+import Alert from "./Components/Alert";
 import { loadUser } from "./actions/auth";
 import setAuthToken from "./actions/utils/setAuthToken";
 import AddResume from "./Components/resume-form/form";
@@ -28,6 +29,7 @@ function App() {
     <Provider store={store}>
       <Router>
         <Navbar />
+        <Alert />
         <Switch>
           <Route exact path="/" component={Landing} />
           <Switch>

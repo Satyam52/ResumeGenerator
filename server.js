@@ -6,7 +6,6 @@ const path = require("path");
 
 connectDB();
 app.use(bodyParser.json({ extended: false }));
-
 app.use("/api/user", require("./routes/user"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/resume", require("./routes/resume"));

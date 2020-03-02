@@ -25,5 +25,13 @@
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam52/ResumeGenerator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Satyam52/ResumeGenerator/issues"
+  },
+  "homepage": "https://github.com/Satyam52/ResumeGenerator#readme",
   "description": ""
 }

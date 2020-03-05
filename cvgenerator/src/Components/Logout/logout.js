@@ -22,11 +22,11 @@ const NavbarPage = ({ logout, isAuthenticated }) => {
   let history = useHistory();
 
   const toggleCollapse = () => {
-    setIsopen({ isOpen: !isOpen });
+    setIsopen(!isOpen);
   };
 
   return (
-    <MDBNavbar color="default-color" dark expand="md">
+    <MDBNavbar color="primary-color" dark expand="md">
       <MDBNavbarBrand>
         <strong className="white-text">ResumeGenerator </strong>
       </MDBNavbarBrand>

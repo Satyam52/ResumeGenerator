@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto:700");
+
+.text-with-animation {
+  font-size: 6vw;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  animation: main-text-animation 1.7s ease-in-out forwards;
+  font-weight: 700;
+  color: #f19578;
+  overflow: hidden;
+  display: block;
+  width: 500vw;
+  margin-left: -200vw;
+}
+
+.container1 {
+  height: 100vh;
+  line-height: 100vh;
+  vertical-align: middle;
+}
+
+.subtext-with-animation {
+  position: absolute;
+  font-size: 5vw;
+  text-align: center;
+  line-height: 100vh;
+  vertical-align: middle;
+  top: 0;
+  width: 100%;
+  font-family: "Gochi Hand", cursive;
+  color: #fff;
+  letter-spacing: 4px;
+  user-select: none;
+  overflow: hidden;
+  display: block;
+}
+
+.subtext-with-animation span:first-of-type {
+  position: relative;
+  opacity: 0;
+  animation: word-animation 0.5s ease-out 1.5s forwards;
+}
+
+.subtext-with-animation span:nth-of-type(2) {
+  position: relative;
+  opacity: 0;
+  animation: word-animation 0.5s ease-out 1.7s forwards;
+}
+
+@keyframes main-text-animation {
+  0% {
+    letter-spacing: 25vw;
+    word-spacing: 100vw;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 4px;
+    word-spacing: 1vw;
+    opacity: 1;
+  }
+}
+
+@keyframes word-animation {
+  0% {
+    top: 10vw;
+    opacity: 0;
+  }
+  100% {
+    top: 3.5vw;
+    opacity: 1;
+  }
+}

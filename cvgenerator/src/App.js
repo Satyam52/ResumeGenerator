@@ -13,6 +13,7 @@ import { loadUser } from "./actions/auth";
 import setAuthToken from "./actions/utils/setAuthToken";
 import AddResume from "./Components/resume-form/form";
 import Navbar from "./Components/Logout/logout";
+import Mobile from "./Components/Mobile/mobile";
 
 function App() {
   if (localStorage.token) {
@@ -24,23 +25,27 @@ function App() {
     }
     store.dispatch(loadUser());
   }, []);
-
+  const isMobile = window.innerWidth <= 500;
   return (
     <Provider store={store}>
-      <Router>
-        <Navbar />
-        <Alert />
-        <Switch>
-          <Route exact path="/" component={Landing} />
+      {isMobile ? (
+        <Mobile />
+      ) : (
+        <Router>
+          <Navbar />
+          <Alert />
           <Switch>
-            <Route exact path="/dashboard" component={Dash} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/add-resume" component={AddResume} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/resume/:id" component={Resume} />
+            <Route exact path="/" component={Landing} />
+            <Switch>
+              <Route exact path="/dashboard" component={Dash} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/add-resume" component={AddResume} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/resume/:id" component={Resume} />
+            </Switch>
           </Switch>
-        </Switch>
-      </Router>
+        </Router>
+      )}
     </Provider>
   );
 }

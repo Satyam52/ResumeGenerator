@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^1.6.8",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "html2canvas": "^1.0.0-rc.5",
     "jspdf": "^1.5.3",
     "mdbreact": "^4.25.0",

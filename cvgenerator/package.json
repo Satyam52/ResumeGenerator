@@ -6,7 +6,7 @@
     "@react-pdf/renderer": "^1.6.8",
     "axios": "^0.19.2",
     "html2canvas": "^1.0.0-rc.5",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "mdbreact": "^4.25.0",
     "moment": "^2.24.0",
     "react": "^16.12.0",
